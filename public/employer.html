@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Employer Portal — JobPortal</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="brand">Job<span>Portal</span></div>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/student.html">Students</a>
+  </nav>
+</header>
+
+<main class="cards">
+  <div class="grid grid-2">
+    <section class="card">
+      <h3>Employer Login / Signup</h3>
+      <div class="form">
+        <input id="e-name" placeholder="Company Name (for signup)" />
+        <input id="e-email" placeholder="Email" />
+        <input id="e-pass" type="password" placeholder="Password" />
+        <div class="actions">
+          <button class="btn" id="e-login">Login</button>
+          <button class="btn outline" id="e-signup">Signup</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Post a Job</h3>
+      <div class="form">
+        <input id="title" placeholder="Title" />
+        <textarea id="description" placeholder="Description"></textarea>
+        <input id="location" placeholder="Location" />
+        <select id="type">
+          <option value="internship">Internship</option>
+          <option value="fulltime">Full-time</option>
+          <option value="parttime">Part-time</option>
+        </select>
+        <input id="stipend" type="number" placeholder="Stipend (for internships)" />
+        <input id="salary" type="number" placeholder="Salary (for jobs)" />
+        <input id="duration_weeks" type="number" placeholder="Duration (weeks)" />
+        <input id="skills" placeholder="Skills (comma separated)" />
+        <button class="btn" id="post">Post</button>
+      </div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h3>My Listings</h3>
+    <div id="jobs" class="list"></div>
+  </section>
+
+  <section class="card">
+    <h3>Applicants</h3>
+    <div id="applicants" class="list"></div>
+  </section>
+</main>
+
+<script type="module" src="/js/employer.js"></script>
+</body>
+</html>
