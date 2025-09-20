@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JobPortal</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Job<span>Portal</span></div>
+    <nav>
+      <a href="/student.html">Students</a>
+      <a href="/employer.html">Employers</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Find Internships. Hire Talent.</h1>
+    <p>A sleek, fast job portal for students and employers.</p>
+    <div class="cta">
+      <a class="btn" href="/student.html">I'm a Student</a>
+      <a class="btn outline" href="/employer.html">I'm an Employer</a>
+    </div>
+  </section>
+
+  <footer class="footer">© <span id="year"></span> JobPortal</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
